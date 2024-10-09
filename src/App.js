@@ -10,22 +10,35 @@ import Home from "./components/Layout/Home";
 
 
 function App() {
+  const [books, setBooks] = useState(booklist.item);  // Use booklist data
+  const [filteredBooks, setFilteredBooks] = useState(books);
+
+  const handleSearch = (searchTerm) => {
+    if (!searchTerm) {
+      setFilteredBooks(books);
+    } else {
+      const filtered = books.filter((book) =>
+        book.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredBooks(filtered);
+    }
+  };
+
   return (
     <div className="App">
-      <header className="container">
-        <div className="">
-          <Header />
-          <Routes>
-          
-            <Route path="/" element={<Home />} />
-            <Route path="/edit-book/:id" element={<EditBook />} />
-            <Route path="/book/:id" element={<Book />} />
-            <Route path="/create-book" element={<CreateBook />} />
-            <Route path="/show-book" element={<ShowBook />} />
-          </Routes>
-          
-        </div>
-      </header>
+      <Header />
+      <SearchBar onSearch={handleSearch} />
+      <ImageHover />
+      <div className="book-list">
+        {filteredBooks.map((book) => (
+          <div key={book.isbn} className="book-item">
+            <img src={book.cover} alt={book.title} />
+            <h3>{book.title}</h3>
+            <p>{book.author}</p>
+            <a href={book.link}>More details</a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

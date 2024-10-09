@@ -1,3 +1,4 @@
+
 body {
   background-color: white;
 }
@@ -6,3 +7,73 @@ img {
   width: 100%;
   height: auto;
 }
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header styles */
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SearchBar styles */
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ImageHover styles */
+img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  max-width: 200px;
+}
+
+.book-item img {
+  width: 100%;
+  height: auto;
+}
+
