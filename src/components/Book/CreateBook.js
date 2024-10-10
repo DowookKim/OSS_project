@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Loader from '../Common/Loader';
 import './Book.css';
+
 const CreateBook = () => {
     const navigate = useNavigate();
     const createBookApi = "https://66ff38182b9aac9c997e8ef9.mockapi.io/api/oss/books"
@@ -73,7 +74,7 @@ const CreateBook = () => {
                     <input type="text" className="form-control" id="puname" name="puname" value={book.puname} onChange={handelInput} />
                 </div>
                 <div className="mb-3">
-                    <label for="byname" className="form-label">Wirter</label>
+                    <label for="byname" className="form-label">Writer</label>
                     <input type="text" className="form-control" id="byname" name="byname" value={book.byname} onChange={handelInput} />
                 </div>
                 <div className="mb-3">
@@ -86,6 +87,7 @@ const CreateBook = () => {
                 </div>
                 <button type="submit" className="btn btn-primary submit-btn">Submit</button>
             </form>
+
         </div>
     )
 }

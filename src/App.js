@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import SearchBar from './components/SearchBar';
-import Header from './components/Header';
-import ImageHover from './components/ImageHover';
-import booklist from './booklist.json';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Book from "./components/Book/Book";
+import CreateBook from "./components/Book/CreateBook";
+import EditBook from "./components/Book/EditBook";
+import ShowBook from "./components/Book/ShowBook";
+import Header from "./components/Common/Header";
+import Home from "./components/Layout/Home";
+
+
 
 function App() {
   const [books, setBooks] = useState(booklist.item);  // Use booklist data

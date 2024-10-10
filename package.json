@@ -22,12 +22,16 @@
     "bootstrap": "^5.3.3",
     "buffer": "^6.0.3",
     "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
     "express": "^4.21.1",
+    "formik": "^2.4.6",
     "framer-motion": "^11.11.4",
     "node-polyfill-webpack-plugin": "^4.0.0",
     "react": "^18.3.1",
     "react-app-rewired": "^2.2.1",
+    "react-datepicker": "^7.4.0",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.0",
     "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1",
     "stream": "^0.0.3",
@@ -64,4 +68,8 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fa80a52ab6abf56bf876051a6eb70138778f9350
