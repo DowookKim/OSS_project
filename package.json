@@ -68,8 +68,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> fa80a52ab6abf56bf876051a6eb70138778f9350
+
+
